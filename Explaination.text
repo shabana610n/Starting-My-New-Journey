@@ -1,7 +1,0 @@
-Reason of why not using of search method for checking that input value contains numbers or not:
-
-The problem lies in the condition val.search(/[0-9]/). The search method returns the index of the first match if found, otherwise -1. In JavaScript, -1 is considered a truthy value, so your condition val === "" || val.search(/[0-9]/) will always evaluate to true unless val is an empty string. As a result, the alert inside the else block will always execute.
-
-Async/Await:
-The async keyword is used before the callback function to indicate that it is an asynchronous function.
-await is used to pause the execution of the function until the Promise returned by fetch resolves, allowing the code to wait for the response from the API before proceeding.
